@@ -23,7 +23,9 @@
          text-align: center;
          border-radius: -1em;
         }
-        
+        id.m1{
+            
+        }
     </style>
 </head>
 <body>
@@ -33,11 +35,11 @@
         <caption>Filmes favoritos</caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
-            <th rowspan="3">Mulheres</th>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -55,7 +57,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -72,6 +74,10 @@
                 <td>Star Wars 5</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
             </tr>
         </thead>
     </table>

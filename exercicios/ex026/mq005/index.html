@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <h1>Meu site</h1>
+<span id="burguer"
+ class="material-symbols-outlined" onclick="clickMenu()" data-extra="itens">
+menu</span>
+<menu id="itens">
+    <ul>
+        <li> <a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 2</a></li>
+        <li> <a href="#">Opção 3</a></li>
+        <li> <a href="#">Opção 4</a></li>
+        <li> <a href="#">Opção 5</a></li>
+    </ul>
+</menu>
+</header>
+<main>
+    <article>
+        <h2>Testanto Media Queries</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea magni accusantium laborum aliquid molestias eveniet commodi mollitia nemo. Perspiciatis debitis beatae quidem dignissimos suscipit alias dolores fugiat, iste cum natus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, maxime. Repellendus esse voluptates dicta neque amet, porro commodi consectetur veniam molestiae fugit, repudiandae, nemo dignissimos provident culpa assumenda expedita corporis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quia laborum ab officia totam libero officiis, architecto consectetur sit illo laudantium natus id voluptatibus doloremque in eligendi neque nam commodi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odio pariatur nemo enim sapiente adipisci consequuntur provident tempora culpa, eligendi earum quod tenetur! Nihil vitae voluptatum eligendi nesciunt repudiandae delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus esse soluta accusamus doloremque voluptas optio cum, dolor nihil modi voluptate commodi quam facilis ex pariatur ab corrupti fugit sed?</p>
+    </article>
+</main>
+<script>
+    function clickMenu() {
+       
+        if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+        } else{
+            itens.style.display = 'block'
+        }
+       
+    }
+</script>
+</body>
+</html>

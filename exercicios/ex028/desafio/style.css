@@ -1,0 +1,32 @@
+.container{
+display: grid;
+grid-template-rows: 80px,40px,200px,40px;
+grid-template-columns: 200px,150px;
+gap: 5px;
+width: 100vw;
+height: 100vh;
+}
+.caixa{
+    background-color: blue;
+  border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+#topo{
+    grid-area:1/1/2/3;
+}
+#menu{
+    grid-area: 2/1/5/2;
+}
+#principal{
+    
+    grid-area: 2/2/4/3;
+}
+#secundario{
+   
+    grid-area: 4/2/5/3;
+}
+#rodapé{
+    grid-area: 5/1/6/3;
+
+}
